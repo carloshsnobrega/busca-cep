@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Endereço</title>
+    <link rel="stylesheet" href="/styles/styles_index.css">
+</head>
+<body>
+    <header>
+        <h1>Busca Endereço</h1>
+    </header>
+    <main>
+        <div class="webExplanation">
+            <p>
+                Web Site para consultar informações de endereço a partir do CEP.
+                Os dados são obtidos através da API ViaCEP, que fornece informações atualizadas sobre endereços no Brasil.
+            </p>
+        </div>
+        
+        <div id="adressSearchContainer">
+            Digite aqui o CEP: <input type="text" id="cepInput" placeholder="Ex: 01001-000">
+            <button id="btnSearchAdress">Buscar Endereço</button>
+        </div>
+
+        <div id="adressResult" class="card" style="display: none;"></div>
+
+        
+    </main>
+    
+    <script src="/scripts/searchAddress.js"></script>
+</body>
+</html>
